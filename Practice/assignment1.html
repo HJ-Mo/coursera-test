@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu</title>
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #f96;
+}
+h1 {
+  margin: 30px;
+  font-size: 50px;
+  text-align: center;
+  font-family: Brush Script MT;
+}
+div {
+  font-size: 10px;
+  text-align: left;
+  font-family: Trebuchet MS;
+}
+#content {
+  float:left;
+  background-color: #00FFFF;
+  width: 33%;
+  height: 150px;
+  border: 1px solid black;
+  margin: 10px;
+  position: relative;
+  padding-top: 30px;
+  padding-left:20px;
+}
+#content3 {
+  float:left;
+  background-color: #00FFFF;
+  width: 33%;
+  height: 150px;
+  border: 1px solid black;
+  margin: 10px;
+  position: relative;
+  padding-top: 30px;
+  padding-left:20px;
+}
+p {
+  font-size: 25px;
+  text-align: center;
+  font-family: Tahoma;
+}
+#name {
+  background-color: #A52A2A;
+  width: 100px;
+  height: 30px;
+  border: 1px solid black;
+  position:absolute;
+  top: 0%;
+  right: 0%;
+}
+/********** browser only **********/
+@media (min-width: 992px) {
+  #content {
+    width: 32%;
+  }
+}
+/********** tablet pc only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-1, .col-md-2, .col-md-3 {
+    float: left;
+    border: 1px solid green;
+  }  
+    .col-md-1 {
+     width: 8.33%;
+    }
+    .col-md-2 {
+    width: 16.66%;
+    }
+    .col-md-3 {
+    width: 25%;
+    }
+
+/********** mobile only **********/
+@media (max-width: 767px) {
+  #content {
+    width: 100%;
+  } 
+}
+</style>
+</head>
+<body>
+<h1>Our Menu</h1>
+
+<div id="content">
+  <p id="name">chicken</p>
+  아무 내용이나 추가
+</div>
+<div id="content">
+  <p id="name">Beef</p>
+  아무 내용이나 추가
+</div>
+<div id="content3">
+  <p id="name">Sushi</p>
+  아무 내용이나 추가
+</div>
+</body>
+</html> 
