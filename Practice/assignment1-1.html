@@ -1,92 +1,101 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Menu</title>
-<style>
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  background-color: #f96;
-}
-h1 {
-  margin: 30px;
-  font-size: 50px;
-  text-align: center;
-  font-family: Brush Script MT;
-}
-p #content {
-  float:left;
-  background-color: #00FFFF;
-  width: 400px;
-  height: 150px;
-  border: 1px solid black;
-  margin: 70px;
-  position: relative;
-  padding-top: 30px;
-  padding-left:20px;
-}
-p #content3 {
-  float:left;
-  background-color: #00FFFF;
-  width: 400px;
-  height: 150px;
-  border: 1px solid black;
-  margin: 70px;
-  position: relative;
-  padding-top: 30px;
-  padding-left:20px;
-}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+  </head>
+  <body>
+    <h1 style="color: #512E5F">Our Menu</h1>
+    
+              * {
+                box-sizing: border-box;
+                margin: 0;
+                background-color: #edd3bc;
+              }
+              h1 {
+                margin: 30px;
+                font-size: 70px;
+                text-align: center;
+                font-family: Brush Script MT;
+              }
+              div{
+                font-size: 14px;
+                text-align: left;
+                font-family: Trebuchet MS;
+              }
+              #bigbox {
+                  background-color: #f0ecdd;
+                  margin: 5px;
+                  height: 200px;
+                  border: 1px solid purple;
+                  position: relative;
+                  padding-top: 40px;
+                  padding-left:20px;
+                  padding-right: 20px;
+                  overflow:auto;
+              }
+              p {
+                font-size: 25px; 
+                text-align: center; 
+                font-family: Brush Script MT;
+              }
+              #smallbox {
+                background-color: #a57873;
+                width: 100px;
+                line-height: 30px;
+                border: 1px solid purple;
+                position:absolute;
+                top: 0%;
+                right: 0%;
+              }
+              /********** browser only **********/
+              @media (min-width: 992px) {
+                .col-lg-1{
+                  float: left;
+                }  
+                  .col-lg-1 {
+                   width:32%;
+                  }
+              }
+              /********** tablet pc only **********/
+              @media (min-width: 768px) and (max-width: 991px) {
+                .col-md-1, .col-md-2{
+                  float: left;
+                }  
+                  .col-md-1 {
+                   width: 48%;
+                  }
+                  .col-md-2 {
+                  width: 97%;
+                  }
 
-p #name {
-  background-color: #A52A2A;
-  width: 100px;
-  height: 30px;
-  border: 1px solid black;
-  position:absolute;
-  top: 0%;
-  right: 0%;
-}
-/********** browser only **********/
-@media (min-width: 992px) {
-  p #content {
-    width: 24%;
-  }
-}
-/********** tablet pc only **********/
-@media (min-width: 768px) and (max-width: 991px) {
-  p #content {
-    width: 48%;
-  }
-  p #content3 {
-    width: 120%;
-  } 
-}
-/********** mobile only **********/
-@media (max-width: 767px) {
-  p #content {
-    width: 100%;
-  } 
-}
-</style>
-</head>
-<body>
-<h1>Our Menu</h1>
-
-<p id="content"; font-size: 10px; text-align: left; font-family: Trebuchet MS;>
-  <p id="name" font-size: 25px;
-  text-align: center;
-  font-family: Tahoma;>chicken</p>
-  아무 내용이나 추가
-</p>
-<p id="content">
-  <p id="name">Beef</p>
-  아무 내용이나 추가
-</p>
-<p id="content3">
-  <p id="name">Sushi</p>
-  아무 내용이나 추가
-</p>
-</body>
-</html> 
+              /********** mobile only **********/
+              @media (max-width: 767px) {
+                .col-sm-1, {
+                  float: left;
+                }  
+                  .col-sm-1 {
+                  width: 100%;
+                  }
+    }
+    <div id="bigbox" class="col-lg-1 col-md-1 col-sm-1">
+    	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit error quis ab perspiciatis eos inventore recusandae iste itaque numquam facilis, tenetur. Doloribus officiis quae facilis, nisi, ex similique. bnAnimi, perferendis.
+     <p id="smallbox"> 
+      	Sushi
+     </p>
+    </div>
+    <div id="bigbox" class="col-lg-1 col-md-1 col-sm-1">
+    	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit error quis ab perspiciatis eos inventore recusandae iste itaque numquam facilis, tenetur. Doloribus officiis quae facilis, nisi, ex similique. bnAnimi, perferendis.
+     <p id="smallbox"> 
+      	Beef
+     </p>
+    </div>
+    <div id="bigbox" class="col-lg-1 col-md-2 col-sm-1">
+    	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit error quis ab perspiciatis eos inventore recusandae iste itaque numquam facilis, tenetur. Doloribus officiis quae facilis, nisi, ex similique. bnAnimi, perferendis.
+     <p id="smallbox"> 
+      	Chicken
+     </p>
+    </div>
+  </body>
+</html>
